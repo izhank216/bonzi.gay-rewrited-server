@@ -346,8 +346,7 @@ class user {
                 this.public.hat = [""];
                 this.public.pitch = 100;
                 this.public.speed = 100;
-                guidcounter++;
-                this.public.guid = guidcounter;
+                this.public.guid = uuidv4(); // Assign a unique UUID
                 
                 // Check if user is blessed
                 if(blessedUsers[this.public.guid]) {
