@@ -1,6 +1,11 @@
 var http = require("http");
 var fs = require("fs");
 
+// Utils
+
+var _ = require("lodash");           // Lodash for utilities
+var { v4: uuidv4 } = require("uuid");
+
 //Read settings
 var colors = fs.readFileSync("./config/colors.txt").toString().replace(/\r/,"").split("\n");
 var hats = fs.readFileSync("./config/hats.txt").toString().replace(/\r/,"").split("\n");
